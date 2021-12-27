@@ -1,0 +1,238 @@
+tr:hover {
+	background-color: #F8F7FF;
+	cursor: pointer;
+	width: 100%;
+}
+
+th {
+	background-color: #2F59E1;
+	color: white;
+}
+
+.right-space {
+	margin-right: 3%;
+}
+
+#addClientBtn {
+	font-size: 32px;
+	height: 32px;
+	width: 32px;
+	line-height: 39px;
+	color: white;
+}
+
+
+.mat-column-clientRef {
+	width: 10% !important;
+}
+
+.mat-column-clientName {
+	width: 10% !important;
+}
+
+.mat-column-clientType {
+	width: 10% !important;
+}
+
+.mat-column-clientGrade {
+	width: 10% !important;
+}
+
+.mat-column-country {
+	width: 10% !important;
+}
+
+.mat-column-domain {
+	width: 5% !important;
+}
+
+.mat-column-actions {
+	width: 5% !important;
+}
+
+
+.backdropBackground {
+	background-color: red;
+}
+
+.actions-row {
+	flex-wrap: nowrap;
+}
+
+::ng-deep .mat-dialog-container {
+	background-color: #EFF3F6;
+	padding: 0 24px 0 24px !important;
+}
+
+.right-space {
+	margin-right: 3%;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+mat-form-field {
+	margin-right: 20px;
+}
+
+form {
+	text-align: center;
+}
+
+#Menu-Title {
+	font-weight: 500;
+}
+
+.noDataRow {
+	font-size: 12px;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.54);
+	text-align: center;
+}
+
+
+.table-top {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	padding-left: 24px;
+	width: 100%;
+
+	.table-top-title {
+		margin: 0;
+		font-size: 20px;
+		line-height: 32px;
+		font-weight: 500;
+		padding-right: 24px;
+		border-right: 1px solid rgba(0, 0, 0, .12);
+		margin-right: 24px;
+	}
+
+	.tt-filter {
+		display: flex;
+		flex: 1 1 0%;
+		flex-direction: row;
+		align-items: center;
+		box-sizing: border-box;
+		place-content: center flex-start;
+		padding-left: 10px;
+	}
+
+	.tt-filter-icon {
+		width: 1.2em;
+		vertical-align: bottom;
+		height: 22px;
+		font-size: 22px;
+		pointer-events: none;
+	}
+
+	.tt-filter-input {
+		flex: 1 1 0%;
+		box-sizing: border-box;
+		font-size: 16px;
+		line-height: 1.125;
+		border: none;
+		height: 32px;
+		pointer-events: visiblefill !important;
+	}
+}
+
+.filter-accordion {
+	border-radius: 8px 0 8px 0;
+}
+
+.filter-exp-panel {
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+	border-bottom-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+
+	box-shadow: 0px -2px 7px -4px rgba(0, 0, 0, 0.2),
+		0px 0px 3px 0px rgba(0, 0, 0, 0.14);
+
+	:hover:not(.mat-expanded) {
+		background: #fff;
+	}
+}
+
+.mat-expansion-panel-header {
+	padding: 0 10px;
+	margin: 10px;
+	pointer-events: none;
+}
+
+.tt-exp-toggle {
+	pointer-events: visiblefill !important;
+}
+
+table {
+	width: 100%;
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2) // 0px -3px 6px -5px rgba(0, 0, 0, 0.2),
+		//   0px 0px 5px 5px rgba(0, 0, 0, 0.14);
+}
+
+mat-paginator {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14);
+}
+
+
+
+.menu-element-icon {
+	margin-right: 10px;
+}
+
+#addBtn {
+	margin-left: 50px;
+	background-color: #0A88EC;
+}
+
+#exportBtn {
+	margin-right: 10px;
+	background-color: #0A88EC;
+}
+
+.upper-nav-btn {
+	background-color: #1D459F;
+	color: white
+}
+
+th {
+	background-color: #F6F7F9;
+	color: black;
+	font-family: 'Poppins', Arial;
+}
+
+#container {
+	margin-left: 50px;
+}
+
+.loading-spinner {
+	font-size: 11px;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+.height {
+	padding-top: 20px;
+}
+
+#menuReturnTitle {
+	font-size: 0.5em;
+	cursor: pointer;
+}
+
+#returnArrow {
+	font-size: 0.7em;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#menuZone {
+	display: flex;
+	margin-bottom: -10px;
+	cursor: pointer;
+}
+
+#upper-intro-text {
+	margin-bottom: 40px;
+}

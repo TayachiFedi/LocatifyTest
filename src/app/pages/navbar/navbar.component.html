@@ -1,0 +1,30 @@
+<div class="main">
+  <nav class="navbar-width">
+    <ul class="navbar-nav">
+      <li *ngFor="let nav of menuContent" class="nav-item" (click)="resetMenu(nav.path)">
+        <a class="nav-link" [ngClass]="{ selectedMenu: nav.selected }">
+          <img class="menu-icon" [src]="nav.icon" />
+        </a>
+      </li>
+  
+    </ul>
+   <!-- <img src="assets/menu-icons/phone.ico">
+   <img src="assets/menu-icons/joystick.ico"> -->
+  </nav>
+  
+  <div id="router">
+      <div class="upper-bar">
+          <div id="logo" class="title">
+              Locatify
+          </div>
+
+          <div id="settings" class="user-name">
+              Sam Liddel 
+              <img class ="row-down" src="assets/menu-icons/row-down.png">
+              <button type="button" class=" btn-sam">Premium</button>
+            </div>
+      </div>
+  
+      <router-outlet></router-outlet>
+  </div>
+</div>

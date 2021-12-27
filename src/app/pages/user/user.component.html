@@ -1,0 +1,178 @@
+<div id="upper-intro">
+
+  <div>
+    
+    
+    <button
+      id="addBtn"
+      class="upper-nav-btn"
+      mat-raised-button
+      (click)="addNew()"
+      matTooltip="Ajouter User"
+    >
+      <mat-icon id="addCVBtn">add_box</mat-icon>
+      Add user
+    </button>
+  </div>
+</div>
+<div class="mr-5" id="container">
+  <mat-accordion class="filter-accordion" displayMode="flat">
+    <mat-expansion-panel
+      class="filter-exp-panel"
+      (opened)="(panelOpenState)"
+      hideToggle
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="table-top" (keydown)="$event.stopPropagation()">
+            <h2 class="table-top-title">Liste des users</h2>
+            <div class="tt-filter">
+              <mat-icon class="mat-icon tt-filter-icon">search</mat-icon>
+              <input
+                [(ngModel)]="mainFilter"
+                placeholder="Filtrer"
+                (change)="applyFilter()"
+                class="tt-filter-input"
+                (click)="$event.stopPropagation()"
+              />
+            </div>
+            <button
+              mat-icon-button
+              class="tt-exp-toggle"
+              (click)="panelOpenState = !panelOpenState"
+            >
+              <mat-icon>filter_list</mat-icon>
+            </button>
+          </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="searchForm">
+        <!-- Field name -->
+
+        <mat-form-field appearance="outline">
+          <mat-label>Name filter</mat-label>
+          <input
+            matInput
+            placeholder="Name Filter"
+            (change)="applyFilter()"
+            formControlName="name"
+          />
+        </mat-form-field>
+
+        <!-- Field userName-->
+
+        <mat-form-field appearance="outline">
+          <mat-label>Email filter </mat-label>
+          <input
+            matInput
+            placeholder="Email filter"
+            (change)="applyFilter()"
+            formControlName="email"
+          />
+        </mat-form-field>
+
+        <!-- Field userType -->
+
+        <mat-form-field appearance="outline">
+          <mat-label>gender filter</mat-label>
+          <input
+            matInput
+            placeholder="Gender filter"
+            (change)="applyFilter()"
+            formControlName="gender"
+          />
+        </mat-form-field>
+
+        <!-- Field country -->
+
+        <mat-form-field appearance="outline">
+          <mat-label>Status filter</mat-label>
+          <input
+            matInput
+            placeholder="Status filter"
+            (change)="applyFilter()"
+            formControlName="status"
+          />
+        </mat-form-field>
+ 
+      </form>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div>
+    <div></div>
+
+    <table
+      mat-table
+      matTableExporter
+      [dataSource]="dataSource"
+      hiddenColumns="6"
+      matSort
+    >
+      <!-- PF Code Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
+        <td mat-cell *matCellDef="let row">
+          {{ row.name }}
+        </td>
+      </ng-container>
+
+      <!-- Created On Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+        <td mat-cell *matCellDef="let row">{{ row.email }}</td>
+      </ng-container>
+
+      <!-- Created By Column -->
+      <ng-container matColumnDef="gender">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Gender</th>
+        <td mat-cell *matCellDef="let row">{{ row.gender }}</td>
+      </ng-container>
+
+      <!-- Status Column -->
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+        <td mat-cell *matCellDef="let row">{{ row.status }}</td>
+      </ng-container>
+
+
+      <!-- actions -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let row">
+          <div class="container row actions-row">
+            <button
+              mat-icon-button
+              matTooltip="Modifier un user"
+              (click)="update(row)"
+            >
+              <mat-icon>launch</mat-icon>
+            </button>
+            <button
+              mat-icon-button
+              matTooltip="Supprimer un user"
+              (click)="deleteUser(row)"
+              color="warn"
+            >
+              <mat-icon>delete_outline</mat-icon>
+            </button>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell noDataRow" colspan="10">
+          Veuillez ajouter les users ci-dessus
+        </td>
+      </tr>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </div>
+</div>

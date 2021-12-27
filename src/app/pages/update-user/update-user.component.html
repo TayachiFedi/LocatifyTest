@@ -1,0 +1,44 @@
+<mat-card-title>Update user</mat-card-title>
+
+<mat-card-content>
+    
+    <form [formGroup]="form" (submit)="updateUser()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input formControlName="name" type="text" id="name" class="form-control" placeholder="Name">
+        </div>
+    
+        <div class="mb-3">
+            <label for="email" class="form-label">Email updateress</label>
+            <input formControlName="email" type="email" id="email" class="form-control" placeholder="name@example.com">
+        </div>
+    
+        <label for="email" class="form-label">Gender</label>
+        <select formControlName="gender" class="form-select" aria-label="Default select example">
+            <option selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    
+    
+        <label for="email" class="form-label">Status</label>
+        <div class="form-check">
+            <input formControlName="status" class="form-check-input" value="active" type="radio" name="status" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Active
+            </label>
+        </div>
+        <div class="form-check">
+            <input formControlName="status" class="form-check-input" value="inactive" type="radio" name="status" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Inactive
+            </label>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit" [disabled]="loading">Update user</button>
+            <button class="btn btn-basic" type="button" (click)="cancel()">Cancel</button>
+        </div>
+    
+    </form>
+</mat-card-content>

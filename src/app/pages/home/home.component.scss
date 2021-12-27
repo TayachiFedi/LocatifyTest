@@ -1,0 +1,174 @@
+.blog-image{
+    width:100px;
+}
+.home-title{
+    font-size: xx-large;
+    color: #656565;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.card{
+height: 300px;
+margin-right: 1.5%;
+width: 244px;
+border-radius: 5% 5%;
+margin-top: 62px;
+background-color: rgb(151 177 231);
+cursor:pointer;
+}
+.new-user{
+    color: white;
+    display: flex;
+    // padding-top: 215px;
+    justify-content: center;
+    font-size: larger;
+    font-family: monospace;
+}
+.card-users{
+    height: 270px;
+margin-right: 1.5%;
+width: 244px;
+border-radius: 5% 5%;
+margin-top: 62px;
+background-color: rgb(151 177 231);
+}
+.cards-users{
+ display: flex;
+}
+.card-two{
+ 
+    height: 300px;
+    /* margin-right: 1.5%; */
+    width: 81%;
+    border-radius: 1% 1%;
+    margin-top: 62px;
+    background-color: white;
+ 
+}
+.recent-users{
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 25px;
+    color: rgb(101 101 101);
+    font-family: auto;
+}
+.users-details{
+    margin-right: 1.5%;
+    width: 198px;
+    height: 168px;
+    width: 175px;
+    margin-left: 29px;
+    box-shadow: 0 0 8px #00000029;
+    border-radius: 5% 5%;
+}
+.card-header{
+background-color: rgb(245 245 245);
+height: 63%;
+padding:0%;
+}
+.card-body{
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 6%;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
+    text-align: -webkit-center;
+    padding: 0.5rem 0.5rem!important;
+
+}
+
+.picture{
+    width: 54px;
+    margin-left: 30%;
+    margin-top: 19px;
+}
+.cards-disp{
+display: flex;
+}
+.plus{
+    place-self: center;
+    padding-top: 27%;
+    color: white;
+    font-size: 92px;
+}
+.half-page{
+    margin-top: 3%;
+}
+.news{
+    font-size: large;
+    color: #656565;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.news-text{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.news-details{
+   
+    margin-right: 1.5%;
+    width: 198px;
+    height: 168px;
+    width: 29%;
+  //  margin-left: 29px;
+    box-shadow: 0 0 8px #00000029;
+    height: 61%;
+    border-radius: 5% 5%;
+}
+.card-body-news{
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 2%;
+   // padding-left: 15px;
+    border-radius: 0 0 8px 8px;
+    background-color: white;
+    text-align: -webkit-center;
+    height: 37%;
+    padding: 0.5rem 0.5rem !important;
+}
+.picture-news{
+width: 100%;
+}
+
+.frame{
+    border-radius: 5% 5%;
+}
+.vertical-line{
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 130px;
+    margin: 0 20px;
+  }
+  .more{
+      display: flex;
+  }
+  .vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+  .tutorial{
+    font-size: large;
+    color: #656565;
+    font-family: sans-serif;
+    font-weight: bold;  
+    margin-left: 65%;
+  }
+  .display{
+      display: flex;
+  }
+  .news-text2{
+    font-family: sans-serif;
+    font-size: 20px; 
+    margin-left: 50.6%;
+  }
+
+  .news-picture{
+      height:100%;
+      width:100%;
+
+  }

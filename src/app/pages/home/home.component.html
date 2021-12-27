@@ -1,0 +1,69 @@
+<div class="home-title">
+  Home
+</div>
+<div>
+  Lorem ipsum is simply dummy text of the printing and typsetting industry . Lorem ipsum has been the industry's
+  standard dumm
+</div>
+<div class="cards-users">
+  <div class="card " (click)="addNewUser()">
+    <p class="plus">+</p>
+    <div class="new-user">
+      New user
+    </div>
+  </div>
+
+  <div class="card-two ">
+    <p class="recent-users"> Recent users</p>
+    <div class="cards-disp">
+      <div *ngFor="let user of users" class="users-details">
+        <div class="card-header">
+          <img src="assets/menu-icons/image.png" class="picture">
+        </div>
+        <div class="card-body">
+          {{user.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+
+
+
+</div>
+<hr>
+
+<div class="half-page">
+
+  <div class="new-section">
+    <div class="display">
+      <p class="news"> News </p>
+      <p class="tutorial">Tutorials</p>
+    </div>
+    <div class="display">
+      <p class="news-text">Be update of the app world</p>
+      <p class="news-text2">Discover how to use the CMS</p>
+    </div>
+  </div>
+  <div class="more">
+    <div class="cards-disp">
+      <div *ngFor="let blog of blogs" class="news-details">
+        <div class="card-header">
+          <img [src]="blog.imageUrl" class="news-picture">
+        </div>
+        <div class="card-body-news">
+          {{blog.title}}
+        </div>
+      </div>
+    </div>
+
+    <div class="v1">
+    </div>
+
+    <div>
+
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/nrbpOmNC_mM" class="frame">
+      </iframe>
+    </div>
+  </div>
